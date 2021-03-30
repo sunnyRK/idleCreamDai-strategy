@@ -1,0 +1,78 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "AaveStableDebtTokenMock",
+  "sourceName": "contracts/mocks/AaveStableDebtTokenMock.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "debt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rate",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "avgStableRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTotalSupplyAndAvgRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalStableDebt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161015a38038061015a8339818101604052604081101561003357600080fd5b8101908080519060200190929190805190602001909291905050508160008190555080600181905550505060ee8061006c6000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c806302b7aa1414604157806339e1b4c714605d578063f731e9be146079575b600080fd5b6047609c565b6040518082815260200191505060405180910390f35b606360a2565b6040518082815260200191505060405180910390f35b607f60a8565b604051808381526020018281526020019250505060405180910390f35b60015481565b60005481565b60008060005460015491509150909156fea265627a7a723158209063f4e8117dd3eaca35cdf0cbc7b49999fe6e9e7c76fc665f71d9f56a42e8e664736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c806302b7aa1414604157806339e1b4c714605d578063f731e9be146079575b600080fd5b6047609c565b6040518082815260200191505060405180910390f35b606360a2565b6040518082815260200191505060405180910390f35b607f60a8565b604051808381526020018281526020019250505060405180910390f35b60015481565b60005481565b60008060005460015491509150909156fea265627a7a723158209063f4e8117dd3eaca35cdf0cbc7b49999fe6e9e7c76fc665f71d9f56a42e8e664736f6c63430005100032",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

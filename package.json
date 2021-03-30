@@ -1,0 +1,74 @@
+{
+  "name": "idle-contracts",
+  "version": "3.0.0",
+  "description": "Idle V3 contracts repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "truffle test",
+    "verify": "yarn run verify",
+    "contract-size": "truffle run contract-size --contracts IdleTokenV3_1 --checkMaxSize"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugduino/idle-contracts"
+  },
+  "keywords": [
+    "idle",
+    "idle.finance",
+    "yield",
+    "openzeppelin",
+    "truffle",
+    "react",
+    "dapp",
+    "infura",
+    "metamask",
+    "web3",
+    "ganache",
+    "web3js",
+    "ethereum"
+  ],
+  "author": "Idle Labs Inc. <info@idle.finance>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bugduino/idle-contracts/issues"
+  },
+  "homepage": "https://idle.finance",
+  "dependencies": {
+    "@0x/sol-trace": "^3.0.8",
+    "@babel/polyfill": "^7.8.3",
+    "@ethersproject/units": "^5.0.11",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contracts": "^2.4.0",
+    "@openzeppelin/contracts-ethereum-package": "^2.5.0",
+    "@openzeppelin/test-helpers": "^0.5.3",
+    "@truffle/hdwallet-provider": "^1.0.25",
+    "@typechain/ethers-v5": "^6.0.5",
+    "@umaprotocol/truffle-ledger-provider": "^1.0.3",
+    "dotenv": "^6.2.0",
+    "ethereum-waffle": "^3.3.0",
+    "ethers": "^5.0.32",
+    "hardhat": "^2.1.2",
+    "hardhat-typechain": "^0.3.5",
+    "scrypt": "github:barrysteyn/node-scrypt#fb60a8d3c158fe115a624b5ffa7480f3a24b03fb",
+    "solidity-coverage": "^0.7.4",
+    "truffle-contract-size": "^2.0.1",
+    "truffle-plugin-verify": "^0.3.11",
+    "truffle-security": "^1.5.5",
+    "typechain": "^4.0.3",
+    "typescript": "^4.2.3",
+    "web3-provider-engine": "^15.0.6"
+  },
+  "devDependencies": {
+    "@nomiclabs/buidler": "^1.2.0",
+    "@nomiclabs/buidler-truffle5": "^1.2.0",
+    "@nomiclabs/buidler-web3": "^1.2.0",
+    "bignumber.js": "^9.0.1",
+    "chai": "^4.3.4",
+    "eth-gas-reporter": "^0.2.1",
+    "node-fetch": "^2.6.0",
+    "truffle-assertions": "^0.9.1",
+    "web3": "^1.2.6"
+  }
+}

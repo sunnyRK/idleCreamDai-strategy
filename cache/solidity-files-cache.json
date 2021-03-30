@@ -1,0 +1,5174 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\GST2Consumer.sol": {
+      "lastModificationDate": 1616932470088,
+      "contentHash": "d3d8aff8ae2e533000b46050db14b31d",
+      "sourceName": "contracts/GST2Consumer.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/GasToken.sol",
+        "@openzeppelin/upgrades/contracts/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "GST2Consumer"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\GasToken.sol": {
+      "lastModificationDate": 1616932470114,
+      "contentHash": "13954669f7bef195e4ba601e3762fe9c",
+      "sourceName": "contracts/interfaces/GasToken.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "GasToken"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\IdleConverterPersonalSignV4.sol": {
+      "lastModificationDate": 1616932470091,
+      "contentHash": "b6da98876aacb8f50cafdc062a2e92a9",
+      "sourceName": "contracts/IdleConverterPersonalSignV4.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "./interfaces/IIdleTokenV3_1.sol",
+        "./interfaces/IIdleToken.sol",
+        "./others/BasicMetaTransaction.sol",
+        "./GST2Consumer.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "AToken",
+        "CERC20",
+        "IdleConverterPersonalSignV4",
+        "iERC20Fulcrum",
+        "yToken"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1615706955207,
+      "contentHash": "183ff1f5e5f04bcfa85cee597bcb0236",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20Detailed.sol": {
+      "lastModificationDate": 1615706955117,
+      "contentHash": "a1a39233394f3c0a00ce348c61433faa",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "ERC20Detailed"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\SafeERC20.sol": {
+      "lastModificationDate": 1615706955337,
+      "contentHash": "83fbce907d2b44fae67a751b83804e02",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts\\ownership\\Ownable.sol": {
+      "lastModificationDate": 1615706955267,
+      "contentHash": "cd44b8402a71c35a4f725f828ced4cae",
+      "sourceName": "@openzeppelin/contracts/ownership/Ownable.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../GSN/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IIdleTokenV3_1.sol": {
+      "lastModificationDate": 1616932470124,
+      "contentHash": "691bfe5ce669c51a5c4cc0e1dbf50448",
+      "sourceName": "contracts/interfaces/IIdleTokenV3_1.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IIdleTokenV3_1"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IIdleToken.sol": {
+      "lastModificationDate": 1616932470123,
+      "contentHash": "aee547ff4fcc91d6d918352e662fcf7c",
+      "sourceName": "contracts/interfaces/IIdleToken.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IIdleToken"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\others\\BasicMetaTransaction.sol": {
+      "lastModificationDate": 1616932470179,
+      "contentHash": "7328ee54f7afdc8ed9a250cd77900d14",
+      "sourceName": "contracts/others/BasicMetaTransaction.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.16"
+      ],
+      "artifacts": [
+        "BasicMetaTransaction"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts\\math\\SafeMath.sol": {
+      "lastModificationDate": 1615706955348,
+      "contentHash": "d208da96b6f6c1d204ee8248087cf2d7",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
+      "lastModificationDate": 1615706955046,
+      "contentHash": "a41701ff3cdbb98920cd49750549d127",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.5"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts\\GSN\\Context.sol": {
+      "lastModificationDate": 1615706955073,
+      "contentHash": "32a66f6f4d0584b403f26f8e5e4d17b5",
+      "sourceName": "@openzeppelin/contracts/GSN/Context.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\wrappers\\IdleFulcrumV2.sol": {
+      "lastModificationDate": 1616932470191,
+      "contentHash": "8e1caa259729d9256e4b5f0d02622ffc",
+      "sourceName": "contracts/wrappers/IdleFulcrumV2.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/iERC20Fulcrum.sol",
+        "../interfaces/ILendingProtocol.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleFulcrumV2"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\iERC20Fulcrum.sol": {
+      "lastModificationDate": 1616932470136,
+      "contentHash": "4931259e1fdb37dd20caf22855e2d660",
+      "sourceName": "contracts/interfaces/iERC20Fulcrum.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "iERC20Fulcrum"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\ILendingProtocol.sol": {
+      "lastModificationDate": 1616932470126,
+      "contentHash": "d01cea943b2a705a43f6167050f32ba2",
+      "sourceName": "contracts/interfaces/ILendingProtocol.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "ILendingProtocol"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\wrappers\\IdleFulcrumDisabled.sol": {
+      "lastModificationDate": 1616932470190,
+      "contentHash": "c61f1ca98e670ad15082fd4f44d756d6",
+      "sourceName": "contracts/wrappers/IdleFulcrumDisabled.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/iERC20Fulcrum.sol",
+        "../interfaces/ILendingProtocol.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleFulcrumDisabled"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\wrappers\\IdleFulcrum.sol": {
+      "lastModificationDate": 1616932470190,
+      "contentHash": "b918f5ae7b5caaa17af1ac2c4a6adefb",
+      "sourceName": "contracts/wrappers/IdleFulcrum.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/iERC20Fulcrum.sol",
+        "../interfaces/ILendingProtocol.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleFulcrum"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\wrappers\\IdleDyDx.sol": {
+      "lastModificationDate": 1616932470188,
+      "contentHash": "da2097353a8be759575ddbf7dcb292e6",
+      "sourceName": "contracts/wrappers/IdleDyDx.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/ILendingProtocol.sol",
+        "../interfaces/IInterestSetter.sol",
+        "../interfaces/DyDxStructs.sol",
+        "../interfaces/DyDx.sol",
+        "./yxToken.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleDyDx"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IInterestSetter.sol": {
+      "lastModificationDate": 1616932470125,
+      "contentHash": "638745c19f2d9b811502e0623ff7612a",
+      "sourceName": "contracts/interfaces/IInterestSetter.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IInterestSetter"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\DyDxStructs.sol": {
+      "lastModificationDate": 1616932470113,
+      "contentHash": "75c82da3cd4ea882d4c4c4eb00e0d240",
+      "sourceName": "contracts/interfaces/DyDxStructs.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "DyDxStructs"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\DyDx.sol": {
+      "lastModificationDate": 1616932470111,
+      "contentHash": "409f499060b97757a20bfc99ce0507b6",
+      "sourceName": "contracts/interfaces/DyDx.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./DyDxStructs.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "DyDx"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\wrappers\\yxToken.sol": {
+      "lastModificationDate": 1616932470192,
+      "contentHash": "155332dc0aebe3e2bbac0bd7cda79aea",
+      "sourceName": "contracts/wrappers/yxToken.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/DyDx.sol",
+        "../interfaces/DyDxStructs.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "yxToken"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
+      "lastModificationDate": 1615706955104,
+      "contentHash": "22fd452b5721fdbf411ef554c2c80b76",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../GSN/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\yxTokenNoConst.sol": {
+      "lastModificationDate": 1616932470178,
+      "contentHash": "c3d5cd58cc2e5ae539912ad858c409bc",
+      "sourceName": "contracts/mocks/yxTokenNoConst.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/DyDx.sol",
+        "../interfaces/DyDxStructs.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "yxTokenNoConst"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\yxTokenMock.sol": {
+      "lastModificationDate": 1616932470177,
+      "contentHash": "d94b0459704072666fcd7d639ef48f5a",
+      "sourceName": "contracts/mocks/yxTokenMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./yxTokenNoConst.sol",
+        "./DyDxMock.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "yxTokenMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\DyDxMock.sol": {
+      "lastModificationDate": 1616932470144,
+      "contentHash": "fd76e663445a71579669aae195fbafbd",
+      "sourceName": "contracts/mocks/DyDxMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "../interfaces/DyDx.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "DyDxMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\IdleDyDxNoConst.sol": {
+      "lastModificationDate": 1616932470149,
+      "contentHash": "9ef045d63e28b02de8757099c13fe2f9",
+      "sourceName": "contracts/mocks/IdleDyDxNoConst.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/ILendingProtocol.sol",
+        "../interfaces/IInterestSetter.sol",
+        "../interfaces/DyDxStructs.sol",
+        "../interfaces/DyDx.sol",
+        "./yxTokenNoConst.sol",
+        "./DyDxMock.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleDyDxNoConst"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\yxDAIWrapperMock.sol": {
+      "lastModificationDate": 1616932470176,
+      "contentHash": "4b0ed0acf0dfd9b4745f9fdca5ec74fc",
+      "sourceName": "contracts/mocks/yxDAIWrapperMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "./IdleDyDxNoConst.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "yxDAIWrapperMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\wrappers\\IdleDSR.sol": {
+      "lastModificationDate": 1616932470187,
+      "contentHash": "9bdf5a08bb06aec135e4cbf38d5ee8e7",
+      "sourceName": "contracts/wrappers/IdleDSR.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "../interfaces/CHAI.sol",
+        "../interfaces/ILendingProtocol.sol",
+        "../interfaces/PotLike.sol",
+        "../libraries/DSMath.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleDSR"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\CHAI.sol": {
+      "lastModificationDate": 1616932470107,
+      "contentHash": "d53479d76459c973e39f71c7c44d1b10",
+      "sourceName": "contracts/interfaces/CHAI.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "CHAI"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\PotLike.sol": {
+      "lastModificationDate": 1616932470130,
+      "contentHash": "09d6a38ee1a0e1f9b858a52b028467fd",
+      "sourceName": "contracts/interfaces/PotLike.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "PotLike"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\libraries\\DSMath.sol": {
+      "lastModificationDate": 1616932470139,
+      "contentHash": "7b47480ce3158bf20d24047cbe7b7bbf",
+      "sourceName": "contracts/libraries/DSMath.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "DSMath"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\IdleDSRNoConst.sol": {
+      "lastModificationDate": 1616932470148,
+      "contentHash": "acde0350f988912504faa5b278fb6c75",
+      "sourceName": "contracts/mocks/IdleDSRNoConst.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "../interfaces/CHAI.sol",
+        "../interfaces/ILendingProtocol.sol",
+        "../interfaces/PotLike.sol",
+        "../libraries/DSMath.sol",
+        "./PotLikeMock.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleDSRNoConst"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\PotLikeMock.sol": {
+      "lastModificationDate": 1616932470153,
+      "contentHash": "8fdbd576c38fb82b52fe09627459f95d",
+      "sourceName": "contracts/mocks/PotLikeMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/PotLike.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "PotLikeMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\CHAIMock.sol": {
+      "lastModificationDate": 1616932470142,
+      "contentHash": "daae8048a53dcb0cd9e02e629f4c4ebe",
+      "sourceName": "contracts/mocks/CHAIMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../interfaces/CHAI.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "CHAIMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\wrappers\\IdleCreamDAI.sol": {
+      "lastModificationDate": 1617074452423,
+      "contentHash": "7ed57c30bfe92f4ad97e874bb842177d",
+      "sourceName": "contracts/wrappers/IdleCreamDAI.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/ILendingProtocol.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "ICreamDAI",
+        "ICreamJumpRateModelV2",
+        "IdleCreamDAI"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\wrappers\\IdleCompoundV2.sol": {
+      "lastModificationDate": 1616932470185,
+      "contentHash": "d35176916af5451e4f966990f3dc8d40",
+      "sourceName": "contracts/wrappers/IdleCompoundV2.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/CERC20.sol",
+        "../interfaces/ILendingProtocol.sol",
+        "../interfaces/WhitePaperInterestRateModel.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleCompoundV2"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\CERC20.sol": {
+      "lastModificationDate": 1616932470105,
+      "contentHash": "8dcf581cd0df72fcdaa57ec808521b1e",
+      "sourceName": "contracts/interfaces/CERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "CERC20"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\WhitePaperInterestRateModel.sol": {
+      "lastModificationDate": 1616932470135,
+      "contentHash": "5747c724cf4fbe54b29f5eb7f569db44",
+      "sourceName": "contracts/interfaces/WhitePaperInterestRateModel.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "WhitePaperInterestRateModel"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\wrappers\\IdleCompoundETH.sol": {
+      "lastModificationDate": 1616932470185,
+      "contentHash": "770d7796385ac75e592da27085f686a4",
+      "sourceName": "contracts/wrappers/IdleCompoundETH.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/CETH.sol",
+        "../interfaces/IWETH.sol",
+        "../interfaces/ILendingProtocol.sol",
+        "../interfaces/WhitePaperInterestRateModel.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleCompoundETH"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\CETH.sol": {
+      "lastModificationDate": 1616932470106,
+      "contentHash": "c2cca8e42ef5f6f15a90b31eef847f02",
+      "sourceName": "contracts/interfaces/CETH.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "CETH"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IWETH.sol": {
+      "lastModificationDate": 1616932470128,
+      "contentHash": "9a92710eef6ccf428cd6f085fd530bee",
+      "sourceName": "contracts/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\cWETHMock.sol": {
+      "lastModificationDate": 1616932470172,
+      "contentHash": "527dc16c69e51e5b6de94f6f2dbb46f0",
+      "sourceName": "contracts/mocks/cWETHMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../interfaces/CETH.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "cWETHMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\wrappers\\IdleBarnBridge.sol": {
+      "lastModificationDate": 1617072226854,
+      "contentHash": "bf5be5bd33554f1c65fe6fc64a62e749",
+      "sourceName": "contracts/wrappers/IdleBarnBridge.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/ILendingProtocol.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IBarnBridge",
+        "ICErc20",
+        "ICompoundProvider",
+        "IController2",
+        "IdleBarnBridge"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\USDCMock.sol": {
+      "lastModificationDate": 1616932470157,
+      "contentHash": "e5bd5157d96908b66577334c2885dc9e",
+      "sourceName": "contracts/mocks/USDCMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "USDCMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\wrappers\\IdleAave.sol": {
+      "lastModificationDate": 1616932470182,
+      "contentHash": "d550f43211a336509ff8a735c515f485",
+      "sourceName": "contracts/wrappers/IdleAave.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/ILendingProtocol.sol",
+        "../interfaces/AaveLendingPoolProvider.sol",
+        "../interfaces/AaveLendingPool.sol",
+        "../interfaces/AaveLendingPoolCore.sol",
+        "../interfaces/AToken.sol",
+        "../interfaces/AaveInterestRateStrategy.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleAave"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\AaveLendingPoolProvider.sol": {
+      "lastModificationDate": 1616932470101,
+      "contentHash": "de135e649a350f0d84260f4d04b69abf",
+      "sourceName": "contracts/interfaces/AaveLendingPoolProvider.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "AaveLendingPoolProvider"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\AaveLendingPool.sol": {
+      "lastModificationDate": 1616932470099,
+      "contentHash": "a13490dcc01313943486ca8d9fbc25b4",
+      "sourceName": "contracts/interfaces/AaveLendingPool.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "AaveLendingPool"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\AaveLendingPoolCore.sol": {
+      "lastModificationDate": 1616932470100,
+      "contentHash": "e27d4c6b65dc02d64f14561f4ab2014a",
+      "sourceName": "contracts/interfaces/AaveLendingPoolCore.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "AaveLendingPoolCore"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\AToken.sol": {
+      "lastModificationDate": 1616932470097,
+      "contentHash": "8d44588bc7150f946316fa5fe6a76522",
+      "sourceName": "contracts/interfaces/AToken.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "AToken"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\AaveInterestRateStrategy.sol": {
+      "lastModificationDate": 1616932470098,
+      "contentHash": "a1feb259bd4d326e8eda77c83f41ff1b",
+      "sourceName": "contracts/interfaces/AaveInterestRateStrategy.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "AaveInterestRateStrategy"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\DataTypes.sol": {
+      "lastModificationDate": 1616932470110,
+      "contentHash": "a2b523169418850aa825ddb64bae32f5",
+      "sourceName": "contracts/interfaces/DataTypes.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "DataTypes"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\IdleAaveNoConst.sol": {
+      "lastModificationDate": 1616932470147,
+      "contentHash": "19a796d380080ee496a5d22930b174fe",
+      "sourceName": "contracts/mocks/IdleAaveNoConst.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/ILendingProtocol.sol",
+        "../interfaces/AaveLendingPoolProvider.sol",
+        "./aaveLendingPoolProviderMock.sol",
+        "../interfaces/AaveLendingPool.sol",
+        "../interfaces/AaveLendingPoolCore.sol",
+        "../interfaces/AToken.sol",
+        "../interfaces/AaveInterestRateStrategy.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleAaveNoConst"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\aaveLendingPoolProviderMock.sol": {
+      "lastModificationDate": 1616932470166,
+      "contentHash": "f540e9dd68eb09840d475cdd4702bead",
+      "sourceName": "contracts/mocks/aaveLendingPoolProviderMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/AaveLendingPoolProvider.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "aaveLendingPoolProviderMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\aDAIMock.sol": {
+      "lastModificationDate": 1616932470160,
+      "contentHash": "59bdecbf260b40ac1f1c6b4f6db61617",
+      "sourceName": "contracts/mocks/aDAIMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../interfaces/AToken.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "aDAIMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\aaveLendingPoolMockV2.sol": {
+      "lastModificationDate": 1616932470166,
+      "contentHash": "953f00ccd557b1c73a73796511a016ea",
+      "sourceName": "contracts/mocks/aaveLendingPoolMockV2.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../interfaces/AaveLendingPoolV2.sol",
+        "../interfaces/DataTypes.sol",
+        "../interfaces/AToken.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "aaveLendingPoolMockV2"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\AaveLendingPoolV2.sol": {
+      "lastModificationDate": 1616932470103,
+      "contentHash": "5753aa1655f2d5620df9019f06c4486a",
+      "sourceName": "contracts/interfaces/AaveLendingPoolV2.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "AaveLendingPoolV2"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\wrappers\\IdleAaveV2.sol": {
+      "lastModificationDate": 1616932470183,
+      "contentHash": "0825642481b7dca6c521f383ad9de4ca",
+      "sourceName": "contracts/wrappers/IdleAaveV2.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/IAToken.sol",
+        "../interfaces/ILendingProtocol.sol",
+        "../interfaces/AaveLendingPoolProviderV2.sol",
+        "../interfaces/AaveLendingPoolV2.sol",
+        "../interfaces/DataTypes.sol",
+        "../interfaces/IVariableDebtToken.sol",
+        "../interfaces/IStableDebtToken.sol",
+        "../interfaces/AaveInterestRateStrategyV2.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleAaveV2"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IAToken.sol": {
+      "lastModificationDate": 1616932470115,
+      "contentHash": "ca30f035031b0ea19ab05cdcd81a2f4f",
+      "sourceName": "contracts/interfaces/IAToken.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IAToken"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\AaveLendingPoolProviderV2.sol": {
+      "lastModificationDate": 1616932470101,
+      "contentHash": "b5f6b7c8f1de26f074316b90285e5d00",
+      "sourceName": "contracts/interfaces/AaveLendingPoolProviderV2.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "AaveLendingPoolProviderV2"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IVariableDebtToken.sol": {
+      "lastModificationDate": 1616932470128,
+      "contentHash": "48f8a35f7af549c472cab0fc3971532c",
+      "sourceName": "contracts/interfaces/IVariableDebtToken.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IVariableDebtToken"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IStableDebtToken.sol": {
+      "lastModificationDate": 1616932470127,
+      "contentHash": "f2a3c3d5281c5a051d7ba61db39078ae",
+      "sourceName": "contracts/interfaces/IStableDebtToken.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IStableDebtToken"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\AaveInterestRateStrategyV2.sol": {
+      "lastModificationDate": 1616932470099,
+      "contentHash": "e150084680394719270e4d6644861ee9",
+      "sourceName": "contracts/interfaces/AaveInterestRateStrategyV2.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "AaveInterestRateStrategyV2"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\aaveLendingPoolMock.sol": {
+      "lastModificationDate": 1616932470164,
+      "contentHash": "a830bd45d2f0fc16ff7fd7174fb9104c",
+      "sourceName": "contracts/mocks/aaveLendingPoolMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../interfaces/AaveLendingPool.sol",
+        "../interfaces/DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "aaveLendingPoolMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\aaveLendingPoolCoreMock.sol": {
+      "lastModificationDate": 1616932470163,
+      "contentHash": "f70e394ea6e3c97dee2d380123d5d88d",
+      "sourceName": "contracts/mocks/aaveLendingPoolCoreMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/AaveLendingPoolCore.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "aaveLendingPoolCoreMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\aDAIWrapperMock.sol": {
+      "lastModificationDate": 1616932470161,
+      "contentHash": "d59718ccd73e8cd6ad0f840ba384bc22",
+      "sourceName": "contracts/mocks/aDAIWrapperMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "../mocks/IdleAaveNoConst.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "aDAIWrapperMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\AaveInterestRateStrategyMockV2.sol": {
+      "lastModificationDate": 1616932470140,
+      "contentHash": "92f90623d7d31be718474a5c1d40afdc",
+      "sourceName": "contracts/mocks/AaveInterestRateStrategyMockV2.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/AaveInterestRateStrategy.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "AaveInterestRateStrategyMockV2"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\aaveInterestRateStrategyMock.sol": {
+      "lastModificationDate": 1616932470162,
+      "contentHash": "1bac27606456e421e03a71f2482cf7d7",
+      "sourceName": "contracts/mocks/aaveInterestRateStrategyMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/AaveInterestRateStrategy.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "aaveInterestRateStrategyMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\idleNewBatchMock.sol": {
+      "lastModificationDate": 1616932470176,
+      "contentHash": "6541428b7bd3f6676355c5aafeca0a77",
+      "sourceName": "contracts/mocks/idleNewBatchMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleNewBatchMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\IDLEMock.sol": {
+      "lastModificationDate": 1616932470146,
+      "contentHash": "7d751ce9b49f67936dcf0e6590aa7f4a",
+      "sourceName": "contracts/mocks/IDLEMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IDLEMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\IdleControllerMock.sol": {
+      "lastModificationDate": 1616932470147,
+      "contentHash": "0b9e74d8a2cfc14eb6d291ca2276a477",
+      "sourceName": "contracts/mocks/IdleControllerMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../interfaces/IdleController.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleControllerMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IdleController.sol": {
+      "lastModificationDate": 1616932470129,
+      "contentHash": "62026faa93be1cbebdc19ed44429a630",
+      "sourceName": "contracts/interfaces/IdleController.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleController"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\IdleTokenV3_1NoConst.sol": {
+      "lastModificationDate": 1616932470152,
+      "contentHash": "755a29c953d25fdfe9817f03c1f99f26",
+      "sourceName": "contracts/mocks/IdleTokenV3_1NoConst.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/utils/ReentrancyGuard.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/lifecycle/Pausable.sol",
+        "@openzeppelin/upgrades/contracts/Initializable.sol",
+        "../interfaces/iERC20Fulcrum.sol",
+        "../interfaces/ILendingProtocol.sol",
+        "../interfaces/IGovToken.sol",
+        "../interfaces/IIdleTokenV3_1.sol",
+        "../interfaces/Comptroller.sol",
+        "../interfaces/CERC20.sol",
+        "../interfaces/IdleController.sol",
+        "../interfaces/PriceOracle.sol",
+        "../GST2ConsumerV2.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleTokenV3_1NoConst"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts-ethereum-package\\contracts\\math\\SafeMath.sol": {
+      "lastModificationDate": 1615706955219,
+      "contentHash": "d208da96b6f6c1d204ee8248087cf2d7",
+      "sourceName": "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\SafeERC20.sol": {
+      "lastModificationDate": 1615706955216,
+      "contentHash": "83fbce907d2b44fae67a751b83804e02",
+      "sourceName": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20.sol": {
+      "lastModificationDate": 1615706954942,
+      "contentHash": "22076986300063e63abd95b123a0e773",
+      "sourceName": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/upgrades/contracts/Initializable.sol",
+        "../../GSN/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\ERC20Detailed.sol": {
+      "lastModificationDate": 1615706954962,
+      "contentHash": "0ee74d89b27247bb5d100dc4bc2de516",
+      "sourceName": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20Detailed.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/upgrades/contracts/Initializable.sol",
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "ERC20Detailed"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts-ethereum-package\\contracts\\utils\\ReentrancyGuard.sol": {
+      "lastModificationDate": 1615706955187,
+      "contentHash": "53c7ca5efb1727d5f85c7fd12499ca2c",
+      "sourceName": "@openzeppelin/contracts-ethereum-package/contracts/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/upgrades/contracts/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts-ethereum-package\\contracts\\ownership\\Ownable.sol": {
+      "lastModificationDate": 1615706955161,
+      "contentHash": "3c68a657fce962342c3a6071850959f4",
+      "sourceName": "@openzeppelin/contracts-ethereum-package/contracts/ownership/Ownable.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/upgrades/contracts/Initializable.sol",
+        "../GSN/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts-ethereum-package\\contracts\\lifecycle\\Pausable.sol": {
+      "lastModificationDate": 1615706955164,
+      "contentHash": "f6cd47c934c1feb06e58e838c9f4f864",
+      "sourceName": "@openzeppelin/contracts-ethereum-package/contracts/lifecycle/Pausable.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/upgrades/contracts/Initializable.sol",
+        "../GSN/Context.sol",
+        "../access/roles/PauserRole.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IGovToken.sol": {
+      "lastModificationDate": 1616932470119,
+      "contentHash": "515f95c676adcf6cd154eae97893443c",
+      "sourceName": "contracts/interfaces/IGovToken.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IGovToken"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\Comptroller.sol": {
+      "lastModificationDate": 1616932470109,
+      "contentHash": "f61d95cc5e5cc6dc1a45c83e1ea903ff",
+      "sourceName": "contracts/interfaces/Comptroller.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "Comptroller"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\PriceOracle.sol": {
+      "lastModificationDate": 1616932470131,
+      "contentHash": "2337b98a04cde07f364469ef97384396",
+      "sourceName": "contracts/interfaces/PriceOracle.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "PriceOracle"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\GST2ConsumerV2.sol": {
+      "lastModificationDate": 1616932470089,
+      "contentHash": "3c0880bedf445cf8f895d5ea03c1e297",
+      "sourceName": "contracts/GST2ConsumerV2.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/GasToken.sol",
+        "@openzeppelin/upgrades/contracts/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "GST2ConsumerV2"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts-ethereum-package\\contracts\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1615706955093,
+      "contentHash": "183ff1f5e5f04bcfa85cee597bcb0236",
+      "sourceName": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts-ethereum-package\\contracts\\utils\\Address.sol": {
+      "lastModificationDate": 1615706954826,
+      "contentHash": "a41701ff3cdbb98920cd49750549d127",
+      "sourceName": "@openzeppelin/contracts-ethereum-package/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.5"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts-ethereum-package\\contracts\\GSN\\Context.sol": {
+      "lastModificationDate": 1615706954877,
+      "contentHash": "eab2f9561946bf87eb5bc14b02faeeab",
+      "sourceName": "@openzeppelin/contracts-ethereum-package/contracts/GSN/Context.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/upgrades/contracts/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts-ethereum-package\\contracts\\access\\roles\\PauserRole.sol": {
+      "lastModificationDate": 1615706955171,
+      "contentHash": "de049daa34f4912dc95d05daeb392060",
+      "sourceName": "@openzeppelin/contracts-ethereum-package/contracts/access/roles/PauserRole.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/upgrades/contracts/Initializable.sol",
+        "../../GSN/Context.sol",
+        "../Roles.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "PauserRole"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\contracts-ethereum-package\\contracts\\access\\Roles.sol": {
+      "lastModificationDate": 1615706955209,
+      "contentHash": "118d44aa29245b854a8785a01af0c4e9",
+      "sourceName": "@openzeppelin/contracts-ethereum-package/contracts/access/Roles.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "Roles"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\IdleTokenV3_1.sol": {
+      "lastModificationDate": 1616932470093,
+      "contentHash": "ad79ade0e62f7fd4d96256fb9cbc6770",
+      "sourceName": "contracts/IdleTokenV3_1.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/utils/ReentrancyGuard.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/lifecycle/Pausable.sol",
+        "@openzeppelin/upgrades/contracts/Initializable.sol",
+        "./interfaces/iERC20Fulcrum.sol",
+        "./interfaces/ILendingProtocol.sol",
+        "./interfaces/IGovToken.sol",
+        "./interfaces/IIdleTokenV3_1.sol",
+        "./interfaces/Comptroller.sol",
+        "./interfaces/CERC20.sol",
+        "./interfaces/IdleController.sol",
+        "./interfaces/PriceOracle.sol",
+        "./GST2ConsumerV2.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleTokenV3_1"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\PriceOracleMock.sol": {
+      "lastModificationDate": 1616932470156,
+      "contentHash": "6e012b154b97ab21f4cac7341e8c8d98",
+      "sourceName": "contracts/mocks/PriceOracleMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/PriceOracle.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "PriceOracleMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\IdleTokenGovernance.sol": {
+      "lastModificationDate": 1616932470093,
+      "contentHash": "1e243887109260ac76950121db05e558",
+      "sourceName": "contracts/IdleTokenGovernance.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/utils/ReentrancyGuard.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/lifecycle/Pausable.sol",
+        "@openzeppelin/upgrades/contracts/Initializable.sol",
+        "./interfaces/iERC20Fulcrum.sol",
+        "./interfaces/ILendingProtocol.sol",
+        "./interfaces/IGovToken.sol",
+        "./interfaces/IIdleTokenV3_1.sol",
+        "./interfaces/Comptroller.sol",
+        "./interfaces/CERC20.sol",
+        "./interfaces/IdleController.sol",
+        "./interfaces/PriceOracle.sol",
+        "./GST2ConsumerV2.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleTokenGovernance"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\wrappers\\IdleCompound.sol": {
+      "lastModificationDate": 1616932470184,
+      "contentHash": "31ff1a0da5a9b696765791daee49a370",
+      "sourceName": "contracts/wrappers/IdleCompound.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../interfaces/CERC20.sol",
+        "../interfaces/ILendingProtocol.sol",
+        "../interfaces/WhitePaperInterestRateModel.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleCompound"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\cUSDCWrapperMock.sol": {
+      "lastModificationDate": 1616932470171,
+      "contentHash": "e8c558c0c4d361aa1fe1b69d3a5e13b1",
+      "sourceName": "contracts/mocks/cUSDCWrapperMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "../interfaces/CERC20.sol",
+        "../interfaces/Comptroller.sol",
+        "../interfaces/ILendingProtocol.sol",
+        "../interfaces/WhitePaperInterestRateModel.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "cUSDCWrapperMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\ComptrollerMock.sol": {
+      "lastModificationDate": 1616932470143,
+      "contentHash": "f582ad9aa063693d66ebcf7e1eaf59dc",
+      "sourceName": "contracts/mocks/ComptrollerMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../interfaces/Comptroller.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "ComptrollerMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\cDAIWrapperMock.sol": {
+      "lastModificationDate": 1616932470168,
+      "contentHash": "a7e1c145f2a4575e175282f897593477",
+      "sourceName": "contracts/mocks/cDAIWrapperMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "../interfaces/CERC20.sol",
+        "../interfaces/Comptroller.sol",
+        "../interfaces/ILendingProtocol.sol",
+        "../interfaces/WhitePaperInterestRateModel.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "cDAIWrapperMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\IdleViewHelper.sol": {
+      "lastModificationDate": 1616932470094,
+      "contentHash": "87bfd6f13df82083717b3f707030e825",
+      "sourceName": "contracts/IdleViewHelper.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/upgrades/contracts/Initializable.sol",
+        "./interfaces/ILendingProtocol.sol",
+        "./interfaces/Comptroller.sol",
+        "./interfaces/CERC20.sol",
+        "./interfaces/UniswapV2Router.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16",
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IIdleTokenV3_1",
+        "IdleViewHelper"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\UniswapV2Router.sol": {
+      "lastModificationDate": 1616932470133,
+      "contentHash": "dfb3fe3cdcab3239875beb7c3926c63d",
+      "sourceName": "contracts/interfaces/UniswapV2Router.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "UniswapV2Router"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\IdleTokenV3_1Mock.sol": {
+      "lastModificationDate": 1616932470150,
+      "contentHash": "d5868f9ae112e18d6385ec3737978090",
+      "sourceName": "contracts/mocks/IdleTokenV3_1Mock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IdleTokenV3_1NoConst.sol",
+        "./GasTokenMock.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/utils/ReentrancyGuard.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/lifecycle/Pausable.sol",
+        "@openzeppelin/upgrades/contracts/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleTokenV3_1Mock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\GasTokenMock.sol": {
+      "lastModificationDate": 1616932470145,
+      "contentHash": "d908e7f15fa4a0dd7e688fbcf4845ed9",
+      "sourceName": "contracts/mocks/GasTokenMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/GasToken.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "GasTokenMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\IdleBatchConverter.sol": {
+      "lastModificationDate": 1616932470090,
+      "contentHash": "4cafda2363feec572ab9ca1d02dff8fe",
+      "sourceName": "contracts/IdleBatchConverter.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts-ethereum-package/contracts/lifecycle/Pausable.sol",
+        "@openzeppelin/upgrades/contracts/Initializable.sol",
+        "./interfaces/IIdleTokenV3_1.sol",
+        "./interfaces/IIdleToken.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleBatchConverter"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\cUSDCMock.sol": {
+      "lastModificationDate": 1616932470169,
+      "contentHash": "618aa2d77203e9d3dd4aac17a31fcdeb",
+      "sourceName": "contracts/mocks/cUSDCMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../interfaces/CERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "cUSDCMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\cDAIMock.sol": {
+      "lastModificationDate": 1616932470168,
+      "contentHash": "014d230a5dd697150f04cc89517efbb1",
+      "sourceName": "contracts/mocks/cDAIMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../interfaces/CERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "cDAIMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\idleBatchMock.sol": {
+      "lastModificationDate": 1616932470175,
+      "contentHash": "f17627d524b5db999cf250bc7c35fc50",
+      "sourceName": "contracts/mocks/idleBatchMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleBatchMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\iDAIMock.sol": {
+      "lastModificationDate": 1616932470173,
+      "contentHash": "d1cd66fbc0a33df67ab3844ae3324d8b",
+      "sourceName": "contracts/mocks/iDAIMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../interfaces/iERC20Fulcrum.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "iDAIMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\DAIMock.sol": {
+      "lastModificationDate": 1616932470144,
+      "contentHash": "ed27e03cb4e7b22b387723d6d1401f31",
+      "sourceName": "contracts/mocks/DAIMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "DAIMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\COMPMock.sol": {
+      "lastModificationDate": 1616932470142,
+      "contentHash": "8f70c971282d80c28f5bd1bc447f8869",
+      "sourceName": "contracts/mocks/COMPMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "COMPMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\WhitePaperMock.sol": {
+      "lastModificationDate": 1616932470159,
+      "contentHash": "2f0458e9a810cb3e7a1c25ba9dba0048",
+      "sourceName": "contracts/mocks/WhitePaperMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/WhitePaperInterestRateModel.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "WhitePaperMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\iDAIWrapperMock.sol": {
+      "lastModificationDate": 1616932470174,
+      "contentHash": "f32cc648da8a0614225c503d0d8c5f1f",
+      "sourceName": "contracts/mocks/iDAIWrapperMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "../interfaces/iERC20Fulcrum.sol",
+        "../interfaces/ILendingProtocol.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "iDAIWrapperMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IERC20Detailed.sol": {
+      "lastModificationDate": 1616932470117,
+      "contentHash": "4faee87e1e3ebebc0edd7d836d2ad359",
+      "sourceName": "contracts/interfaces/IERC20Detailed.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IERC20Detailed"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\InterestSetterMock.sol": {
+      "lastModificationDate": 1616932470153,
+      "contentHash": "50def96eb45b6826795b5d9ca94c8c9e",
+      "sourceName": "contracts/mocks/InterestSetterMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IInterestSetter.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "InterestSetterMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\IdleRebalancerV3_1.sol": {
+      "lastModificationDate": 1616932470091,
+      "contentHash": "7433b071b38bdd040c66ea4ae446c36d",
+      "sourceName": "contracts/IdleRebalancerV3_1.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IIdleRebalancerV3.sol",
+        "@openzeppelin/contracts/ownership/Ownable.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IdleRebalancerV3_1"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IIdleRebalancerV3.sol": {
+      "lastModificationDate": 1616932470121,
+      "contentHash": "0c79d20eef9fb36a89d0b6a952c5bf02",
+      "sourceName": "contracts/interfaces/IIdleRebalancerV3.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IIdleRebalancerV3"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\others\\EIP712MetaTransaction.sol": {
+      "lastModificationDate": 1616932470180,
+      "contentHash": "fbc2d28badae9e7e98750099a1f052f8",
+      "sourceName": "contracts/others/EIP712MetaTransaction.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./EIP712Base.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.13"
+      ],
+      "artifacts": [
+        "EIP712MetaTransaction"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\others\\EIP712Base.sol": {
+      "lastModificationDate": 1616932470179,
+      "contentHash": "179dc79ad41b49c6e478fff4467e2c3e",
+      "sourceName": "contracts/others/EIP712Base.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.13"
+      ],
+      "artifacts": [
+        "EIP712Base"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\Gauge.sol": {
+      "lastModificationDate": 1616932470114,
+      "contentHash": "bad2540719c297ce00d85370965e58df",
+      "sourceName": "contracts/interfaces/Gauge.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "Gauge"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\GovernorAlpha.sol": {
+      "lastModificationDate": 1616932470115,
+      "contentHash": "19c1e3d8dfece7e06bf0650887995af7",
+      "sourceName": "contracts/interfaces/GovernorAlpha.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "GovernorAlpha"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IAdminUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1616932470116,
+      "contentHash": "31f8bf56525db2d0e848e8271530f4d8",
+      "sourceName": "contracts/interfaces/IAdminUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IAdminUpgradeabilityProxy"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\Idle.sol": {
+      "lastModificationDate": 1616932470129,
+      "contentHash": "fed2ca4e1c23867088e749c4942d447b",
+      "sourceName": "contracts/interfaces/Idle.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "Idle"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IERC20Mintable.sol": {
+      "lastModificationDate": 1616932470118,
+      "contentHash": "4c25f774685ee09f08c6ade1140109f0",
+      "sourceName": "contracts/interfaces/IERC20Mintable.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IERC20Mintable"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IGovernorAlpha.sol": {
+      "lastModificationDate": 1616932470119,
+      "contentHash": "02eb3d11b71bb84ed9fe299afd6a643f",
+      "sourceName": "contracts/interfaces/IGovernorAlpha.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IGovernorAlpha"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IIdleRebalancer.sol": {
+      "lastModificationDate": 1616932470120,
+      "contentHash": "c4a9c6ed3d3aeaf0962c785b4a7ca613",
+      "sourceName": "contracts/interfaces/IIdleRebalancer.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IIdleRebalancer"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IIdleTokenV3.sol": {
+      "lastModificationDate": 1616932470124,
+      "contentHash": "9066ee4951060eb47efab89a5ef75364",
+      "sourceName": "contracts/interfaces/IIdleTokenV3.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IIdleTokenV3"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\IProxyAdmin.sol": {
+      "lastModificationDate": 1616932470127,
+      "contentHash": "f70aa6ec2e2d05769c67a15baba71b92",
+      "sourceName": "contracts/interfaces/IProxyAdmin.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "IProxyAdmin"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\RealUSDC.sol": {
+      "lastModificationDate": 1616932470131,
+      "contentHash": "67fc4d39f8ba18f2aeb05660702db45a",
+      "sourceName": "contracts/interfaces/RealUSDC.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "RealUSDC"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\UniswapExchangeInterface.sol": {
+      "lastModificationDate": 1616932470133,
+      "contentHash": "40139260a4074dc8e1cd134079c55304",
+      "sourceName": "contracts/interfaces/UniswapExchangeInterface.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "UniswapExchangeInterface"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\USDT.sol": {
+      "lastModificationDate": 1616932470132,
+      "contentHash": "072ccc01c3f1583447485f33d45d2741",
+      "sourceName": "contracts/interfaces/USDT.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "USDT"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\Vester.sol": {
+      "lastModificationDate": 1616932470134,
+      "contentHash": "50cfbe5899d20ffba92df88d66daa800",
+      "sourceName": "contracts/interfaces/Vester.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "Vester"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\interfaces\\VesterFactory.sol": {
+      "lastModificationDate": 1616932470135,
+      "contentHash": "524ec508aaf26d0528411205591b9f48",
+      "sourceName": "contracts/interfaces/VesterFactory.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "VesterFactory"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\Migrations.sol": {
+      "lastModificationDate": 1616932470094,
+      "contentHash": "ad35e5e4ae18f508cb0b8a1695d8ca4c",
+      "sourceName": "contracts/Migrations.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "Migrations"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\MinimalInitializableProxyFactory.sol": {
+      "lastModificationDate": 1616932470096,
+      "contentHash": "f6a1c14f9eb7b67f6721c78c2f742269",
+      "sourceName": "contracts/MinimalInitializableProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "MinimalInitializableProxyFactory"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\AaveStableDebtTokenMock.sol": {
+      "lastModificationDate": 1616932470140,
+      "contentHash": "d93f59ccbfc4e8ec386b5a8a95354cee",
+      "sourceName": "contracts/mocks/AaveStableDebtTokenMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "AaveStableDebtTokenMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\AaveVariableDebtTokenMock.sol": {
+      "lastModificationDate": 1616932470141,
+      "contentHash": "ce3add392ce6aa91ed7ab50e50c8f615",
+      "sourceName": "contracts/mocks/AaveVariableDebtTokenMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "AaveVariableDebtTokenMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\ForceSend.sol": {
+      "lastModificationDate": 1616932470145,
+      "contentHash": "450e1b85812a235f50aceb56389df17e",
+      "sourceName": "contracts/mocks/ForceSend.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "ForceSend"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\mocks\\WETHMock.sol": {
+      "lastModificationDate": 1616932470158,
+      "contentHash": "dc55f67fbc838480daeec2f2c2ac1f8d",
+      "sourceName": "contracts/mocks/WETHMock.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.16"
+      ],
+      "artifacts": [
+        "WETHMock"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\contracts\\tests\\Foo.sol": {
+      "lastModificationDate": 1616932470181,
+      "contentHash": "7a78d72b974aff6845897044b543a28e",
+      "sourceName": "contracts/tests/Foo.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.16"
+      ],
+      "artifacts": [
+        "Foo"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1616919865443,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "C:\\Blockchain\\Projects\\Gitcoin\\IDLE\\Idle-contracts-2\\idle-contracts-cream-DAI\\node_modules\\@openzeppelin\\upgrades\\contracts\\Initializable.sol": {
+      "lastModificationDate": 1615706934220,
+      "contentHash": "402d88f041ed1754339d60ae70077cd9",
+      "sourceName": "@openzeppelin/upgrades/contracts/Initializable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.24 <0.7.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "DyDxStructs",
+  "sourceName": "contracts/interfaces/DyDxStructs.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72315820ba5934615b3c6fddbae8c8cb2dbad6d8319d3d1638a3360eb6db723d1fd132a664736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820ba5934615b3c6fddbae8c8cb2dbad6d8319d3d1638a3360eb6db723d1fd132a664736f6c63430005100032",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

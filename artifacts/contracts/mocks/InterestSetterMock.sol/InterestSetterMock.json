@@ -1,0 +1,72 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "InterestSetterMock",
+  "sourceName": "contracts/mocks/InterestSetterMock.sol",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "getInterestRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "interestRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "setInterestRate",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610150806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80635f84f302146100465780637c3a00fd14610074578063e8177dcf14610092575b600080fd5b6100726004803603602081101561005c57600080fd5b81019080803590602001909291905050506100fe565b005b61007c610108565b6040518082815260200191505060405180910390f35b6100e8600480360360608110156100a857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291908035906020019092919050505061010e565b6040518082815260200191505060405180910390f35b8060008190555050565b60005481565b600080549050939250505056fea265627a7a72315820e15e2fd68cd4b3b44f4fb1e3b6b4dd7ae40580c8238e11e24f79417e34032ade64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80635f84f302146100465780637c3a00fd14610074578063e8177dcf14610092575b600080fd5b6100726004803603602081101561005c57600080fd5b81019080803590602001909291905050506100fe565b005b61007c610108565b6040518082815260200191505060405180910390f35b6100e8600480360360608110156100a857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291908035906020019092919050505061010e565b6040518082815260200191505060405180910390f35b8060008190555050565b60005481565b600080549050939250505056fea265627a7a72315820e15e2fd68cd4b3b44f4fb1e3b6b4dd7ae40580c8238e11e24f79417e34032ade64736f6c63430005100032",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

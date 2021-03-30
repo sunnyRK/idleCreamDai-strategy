@@ -1,0 +1,53 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "AaveVariableDebtTokenMock",
+  "sourceName": "contracts/mocks/AaveVariableDebtTokenMock.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "_scaledTotalSupply",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "scaledTotalSupply",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161010d38038061010d8339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000819055505060b38061005a6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063898a31ae146037578063b1bf962d146053575b600080fd5b603d606f565b6040518082815260200191505060405180910390f35b60596075565b6040518082815260200191505060405180910390f35b60005481565b6000805490509056fea265627a7a72315820c492a66800d3f21f51e8f4999c01669ef63d41f7dec490d146653b29459c456064736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c8063898a31ae146037578063b1bf962d146053575b600080fd5b603d606f565b6040518082815260200191505060405180910390f35b60596075565b6040518082815260200191505060405180910390f35b60005481565b6000805490509056fea265627a7a72315820c492a66800d3f21f51e8f4999c01669ef63d41f7dec490d146653b29459c456064736f6c63430005100032",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
