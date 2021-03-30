@@ -1,25 +1,19 @@
-# Idle Finance & BarnBridge Tranche Strategy
+# Idle Finance & Cream Finance DAI Strategy
 
 ## Solution
 
 I have used Idle finance interface `ILendingProtocol` to starture for strategy.
 
-Where strategy consumes a `USDC` token and internall it will call `buyTokens` of BarnBridge and buy BarnBridge cUSDC token.
-
-Strategy will get `Senior Tranche APY` from BarnBridge. There are two types of tranches in `BarnBridge like Senior and Junior Tranches`.
-
-`Senior tanches is fixed rate` pool and there is no risk user will get fixed rate on top of their bond.
-
-`Junior Tranches are at higher risk.` It is not fixed rate it is variable rate. It can get a more apy then senior tranche but if price get vrash of token then it could get lower apy then senior.
+Where strategy consumes a `DAI` token and internall it will call `mint` of creamDAI and buy Cream Dai Stablecoin token.
 
 ## IdleBarnBridge Strategy Code and test case:
 
-`Strategy:` You can find code in `contracts/wrappers/IBarnBridge.sol` path.  
-[Clieck here to go strategy code](https://github.com/sunnyRK/Tranches-GR9/blob/master/contracts/wrappers/IdleBarnBridge.sol)
+`Strategy:` You can find code in `contracts/wrappers/IdleCreamDAI.sol` path.  
+[Clieck here to go strategy code](https://github.com/sunnyRK/idleCreamDai-strategy/blob/master/contracts/wrappers/IdleCreamDAI.sol)
 
 
-`Test-case:` You can find test case in `test/IdleBarnBridge-test.js` path.  
-[Click here to go test cases](https://github.com/sunnyRK/Tranches-GR9/blob/master/test/idleBarnBridge-test.js)  
+`Test-case:` You can find test case in `test/idleCreamDai.js` path.  
+[Click here to go test cases](https://github.com/sunnyRK/idleCreamDai-strategy/blob/master/test/idleCreamDai.js)  
 
 ## Run
 
