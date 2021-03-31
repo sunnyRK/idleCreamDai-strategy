@@ -74,9 +74,13 @@ describe("deployed Contract on Mainnet fork", function() {
         accounts[0].address
     )
     await daiContract.approve(creamDaiContract.address, '1000000000000000000000000000000000')
-    await daiContract.transfer(IdleCreamDAI_Instance.address, '10000000')
-    await IdleCreamDAI_Instance.mint() //// Mint Tokens or BuyTokens f
+    await daiContract.transfer(IdleCreamDAI_Instance.address, '1000000000000000000')
 
+    const bal0 = await creamDaiContract.balanceOf(accounts[0].address);
+    console.log('balanceOf0 crDai before mint: ', bal0.toString());
+    await IdleCreamDAI_Instance.mint() //// Mint Tokens or BuyTokens
+    const bal1 = await creamDaiContract.balanceOf(accounts[0].address);
+    console.log('balanceOf1 crDai after mint: ', bal1.toString());
   });
 
   it("Mint and Redeem from CreamDAI through idle startergy", async function() {

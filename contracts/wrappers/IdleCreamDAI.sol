@@ -26,6 +26,7 @@ interface ICreamDAI {
   function totalBorrows() external view returns (uint);
   function totalReserves() external view returns (uint);
   function underlying() external view returns (uint);
+  function exchangeRateStored() external view returns (uint);
 }
 
 interface ICreamJumpRateModelV2 {
@@ -86,7 +87,7 @@ contract IdleCreamDAI is ILendingProtocol, Ownable {
    * @return : yearly net rate
    */
   function nextSupplyRate(uint256 _amount)
-    external view
+    public view
     returns (uint256) {
       uint256 cash = ICreamDAI(token).getCash();
       uint256 totalBorrows = ICreamDAI(token).totalBorrows();
@@ -101,22 +102,21 @@ contract IdleCreamDAI is ILendingProtocol, Ownable {
   }
 
   /**
-   * @return current price of Cream DAI in underlying, crDAI price is always 1
+   * @return current price of crDAI token
    */
   function getPriceInToken()
     external view
     returns (uint256) {
-      return 10**18;
+      return ICreamDAI(token).exchangeRateStored();
   }
 
   /**
-   * @return apr : current yearly net rate
+   * @return current apr
    */
   function getAPR()
     external view
     returns (uint256) {
-        // return nextSupplyRate(0);
-        return 0;
+        return nextSupplyRate(0); // current apr whne you pass amount 0
   }
 
   /**
