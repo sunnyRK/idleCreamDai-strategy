@@ -46,6 +46,9 @@ contract IdleCreamDAI is ILendingProtocol, Ownable {
   address public idleToken;
   bool public initialized;
 
+  address public jumpRateModelV2 = 0x014872728e7D8b1c6781f96ecFbd262Ea4D2e1A6;
+  uint256 oneYearTotalBlocks = 2102400;
+
   /**
    * @param _token : crDAI address
    * @param _idleToken : idleToken address
@@ -73,10 +76,10 @@ contract IdleCreamDAI is ILendingProtocol, Ownable {
     public view
     returns (uint256) {     
       uint oneMinusReserveFactor = uint(1e18).sub(params[3]);
-      uint borrowRate = ICreamJumpRateModelV2(0x014872728e7D8b1c6781f96ecFbd262Ea4D2e1A6).getBorrowRate(params[0], params[1], params[2]);
+      uint borrowRate = ICreamJumpRateModelV2(jumpRateModelV2).getBorrowRate(params[0], params[1], params[2]);
       uint rateToPool = borrowRate.mul(oneMinusReserveFactor).div(1e18);
-      uint ratePerBlock = ICreamJumpRateModelV2(0x014872728e7D8b1c6781f96ecFbd262Ea4D2e1A6).utilizationRate(params[0], params[1], params[2]).mul(rateToPool).div(1e18);
-      uint totalApy = ratePerBlock.div(1e8).mul(2102400).mul(100);
+      uint ratePerBlock = ICreamJumpRateModelV2(jumpRateModelV2).utilizationRate(params[0], params[1], params[2]).mul(rateToPool).div(1e18);
+      uint totalApy = ratePerBlock.div(1e8).mul(oneYearTotalBlocks).mul(100);
       return totalApy;
   }
 
