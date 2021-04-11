@@ -30,6 +30,7 @@ interface ICreamDAI {
 }
 
 interface ICreamJumpRateModelV2 {
+  function blocksPerYear() external view returns (uint);
   function getBorrowRate(uint cash, uint borrows, uint reserves) external view returns (uint);
   function getSupplyRate(uint cash, uint borrows, uint reserves, uint reserveFactorMantissa) external view returns (uint);
   function utilizationRate(uint cash, uint borrows, uint reserves) external pure returns (uint);
@@ -47,7 +48,6 @@ contract IdleCreamDAI is ILendingProtocol, Ownable {
   bool public initialized;
 
   address public jumpRateModelV2 = 0x014872728e7D8b1c6781f96ecFbd262Ea4D2e1A6;
-  uint256 oneYearTotalBlocks = 2102400;
 
   /**
    * @param _token : crDAI address
@@ -79,7 +79,7 @@ contract IdleCreamDAI is ILendingProtocol, Ownable {
       uint borrowRate = ICreamJumpRateModelV2(jumpRateModelV2).getBorrowRate(params[0], params[1], params[2]);
       uint rateToPool = borrowRate.mul(oneMinusReserveFactor).div(1e18);
       uint ratePerBlock = ICreamJumpRateModelV2(jumpRateModelV2).utilizationRate(params[0], params[1], params[2]).mul(rateToPool).div(1e18);
-      uint totalApy = ratePerBlock.div(1e8).mul(oneYearTotalBlocks).mul(100);
+      uint totalApy = ratePerBlock.div(1e8).mul(ICreamJumpRateModelV2(jumpRateModelV2).blocksPerYear()).mul(100);
       return totalApy;
   }
 
@@ -164,6 +164,6 @@ contract IdleCreamDAI is ILendingProtocol, Ownable {
    * @return underlying tokens available
    */
   function availableLiquidity() external view returns (uint256) {
-    return IERC20(underlying).balanceOf(token);
+    return ICreamDAI(token).getCash();
   }
 }
